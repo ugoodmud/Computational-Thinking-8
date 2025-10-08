@@ -26,7 +26,7 @@ def get_distance(s1, s2):
 	dy = s1.ycor() - s2.ycor()
 	return math.sqrt(dx*dx + dy*dy)
 
-def draw_rectangle( color="black",x=0,y=0, width=100, height=100,):
+def draw_rectangle( color="red",x=0,y=0, width=100, height=100,):
 	sprite = turtle.Turtle()
 	sprite.speed(0)
 	sprite.pencolor(color)
@@ -54,17 +54,19 @@ window.tracer(0)
 # Section 2 - Your code
 set_background("fall")
 
-draw_rectangle("black", 100, 100, 200, 200)
-draw_rectangle("red", -100, 100, 200, 200)
-draw_rectangle("red", 100, -100, 200, 200)
+draw_rectangle("red", 100, 100, 200, 200)
+draw_rectangle("purple", -100, 100, 200, 200)
+draw_rectangle("gold", 100, -100, 200, 200)
 
 s1 = create_sprite("cardinal", 100, 100)
 s2 = create_sprite("cardinal", -100, -100)
 
 message1 = create_sprite("alien",-200,200)
 message1.color("red")
-message1.write("Your Name",font = ("Arial", 40, "normal"))
+message1.write("Amanuel",font = ("Arial", 40, "normal"))
 message1.hideturtle()
+message1.goto(-200,-250)
+message1.write("i love basketball",font = ("Arail", 40, "normal")) 
 
 
 ######################################################################

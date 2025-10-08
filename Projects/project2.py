@@ -4,9 +4,9 @@ dog_points = 0
 
 answer = input ("witch is better A) waffles or B) pancakes?")
 if answer =="A": 
-     waffles_points += 1 
+     dog_points += 1 
 elif answer == "B":
-     pancakes_points += 1
+     cat_points += 1
 
 
 answer = input ("what animal is more useful? A) Dogs or B) cats")
@@ -17,7 +17,7 @@ elif answer == "B":
 
 
 answer = input ("what food is more tasty? A) steak or B) chicken")
-if answer == "A": 
+if answer == "A" or answer == "B": 
      dog_points += 1 
 elif answer == "B": 
      cat_points += 1 
