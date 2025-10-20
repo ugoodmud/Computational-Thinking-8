@@ -54,19 +54,27 @@ window.tracer(0)
 # Section 2 - Your code
 set_background("fall")
 
+# rectangles
+
 draw_rectangle("red", 100, 100, 200, 200)
 draw_rectangle("purple", -100, 100, 200, 200)
 draw_rectangle("gold", 100, -100, 200, 200)
+draw_rectangle("blue",-100,-100,200,200)
 
-s1 = create_sprite("cardinal", 100, 100)
-s2 = create_sprite("cardinal", -100, -100)
+# sprites
+
+s1 = create_sprite("basketball", 100, 100)
+s2 = create_sprite("dog", -100, -100)
+s3 = create_sprite("soccer ball", -100, 100)
+
+# messages
 
 message1 = create_sprite("alien",-200,200)
 message1.color("red")
 message1.write("Amanuel",font = ("Arial", 40, "normal"))
 message1.hideturtle()
 message1.goto(-200,-250)
-message1.write("i love basketball",font = ("Arail", 40, "normal")) 
+message1.write("i love basketball",font = ("Arial", 40, "normal")) 
 
 
 ######################################################################
